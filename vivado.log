@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May  3 18:55:08 2022
+# Process ID: 15448
+# Current directory: C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17116 C:\Users\kenry\OneDrive - CSULB\2021 - 2022\Spring 2022\CECS 341\Lab 6\lab_6.xpr
+# Log file: C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/vivado.log
+# Journal file: C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: Datapath
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1499.281 ; gain = 270.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/Datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_ADD' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/PC_ADD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_ADD' (2#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/PC_ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNTL' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/CNTL.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNTL' (3#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/CNTL.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/Instruction_Memory.v:4]
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (4#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/Instruction_Memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile32' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/regfile32.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'regfile32' (6#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/regfile32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/DataMem.v:4]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dmem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (7#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/DataMem.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (8#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sources_1/new/Datapath.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2566.477 ; gain = 1337.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 2566.477 ; gain = 1337.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 2566.477 ; gain = 1337.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2566.477 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2670.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:07 ; elapsed = 00:00:57 . Memory (MB): peak = 2854.031 ; gain = 1625.492
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:03 . Memory (MB): peak = 2854.031 ; gain = 1716.637
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  3 18:57:14 2022...

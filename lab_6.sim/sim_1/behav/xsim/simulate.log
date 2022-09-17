@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+t=  930.0ns dm[20] 00000005
+t=  950.0ns dm[24] 0000000f
+t=  970.0ns dm[28] 00000005
+t=  990.0ns dm[32] 00000014
+$finish called at time : 990 ns : File "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 6/lab_6.srcs/sim_1/new/Datapath_TB.v" Line 63
